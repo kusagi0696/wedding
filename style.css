@@ -69,52 +69,62 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.35));
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,.05) 0%,
+    rgba(0,0,0,.10) 45%,
+    rgba(0,0,0,.65) 100%
+  );
 }
 
 .hero-text {
   position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
+  left: 50%;
+  bottom: 58px;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 0 18px;
+  z-index: 5;
 }
 
 .hero-text h1 {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(76px, 19vw, 138px);
+  font-size: clamp(62px, 16vw, 118px);
   font-weight: 500;
-  line-height: .78;
-  letter-spacing: .06em;
-  text-shadow: 0 8px 28px rgba(0,0,0,.22);
+  line-height: .82;
+  letter-spacing: .08em;
+  text-shadow: 0 8px 28px rgba(0,0,0,.38);
 }
 
 .hero-text h1 span {
   font-family: "Allura", cursive;
-  font-size: .7em;
+  font-size: .65em;
   letter-spacing: 0;
+  margin-right: 10px;
 }
 
 .hero-text p {
-  margin: 28px 0 4px;
-  font-size: 22px;
-  letter-spacing: .22em;
+  margin: 22px 0 4px;
+  font-size: 20px;
+  letter-spacing: .35em;
   font-weight: 700;
+  text-shadow: 0 5px 18px rgba(0,0,0,.45);
 }
 
 .hero-text em {
   font-family: "Allura", cursive;
-  font-size: 40px;
+  font-size: 42px;
   font-style: normal;
+  text-shadow: 0 5px 18px rgba(0,0,0,.45);
 }
 
 .down {
   position: absolute;
   left: 50%;
-  bottom: 24px;
+  bottom: 14px;
   transform: translateX(-50%);
   width: 42px;
   height: 42px;
@@ -126,6 +136,7 @@ body {
   border: 1px solid rgba(255,255,255,.7);
   background: rgba(79,107,74,.55);
   font-size: 26px;
+  z-index: 6;
 }
 
 .music-btn {

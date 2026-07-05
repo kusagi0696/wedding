@@ -636,3 +636,6 @@ footer span {
 .down {
   bottom: 6px !important;
 }
+.hero-text h1 {
+    font-size: clamp(46px, 11vw, 82px) !important;
+}

@@ -667,3 +667,36 @@ footer span {
     transform: rotate(4deg) !important;
   }
 }
+
+@media (max-width: 560px) {
+  .polaroids {
+    position: relative !important;
+    height: 430px !important;
+    display: block !important;
+    margin-top: 20px !important;
+    padding: 0 !important;
+  }
+
+  .polaroid,
+  .polaroid.left,
+  .polaroid.right {
+    position: absolute !important;
+    width: 58% !important;
+    max-width: 230px !important;
+    margin: 0 !important;
+  }
+
+  .polaroid.left {
+    left: 6% !important;
+    top: 10px !important;
+    transform: rotate(-7deg) !important;
+    z-index: 1 !important;
+  }
+
+  .polaroid.right {
+    right: 6% !important;
+    top: 145px !important;
+    transform: rotate(7deg) !important;
+    z-index: 2 !important;
+  }
+}

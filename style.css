@@ -382,13 +382,14 @@ h2 {
 .photo-banner span {
   position: absolute;
   left: 50%;
-  bottom: 42px;
+  top: 90px;
+  bottom: auto;
   transform: translateX(-50%);
   color: white;
   font-family: "Allura", cursive;
   font-size: 74px;
-  z-index: 1;
-  text-shadow: 0 8px 28px rgba(0,0,0,.28);
+  z-index: 2;
+  text-shadow: 0 8px 28px rgba(0,0,0,.35);
 }
 
 .timeline {

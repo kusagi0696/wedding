@@ -639,3 +639,31 @@ footer span {
 .hero-text h1 {
     font-size: clamp(46px, 11vw, 82px) !important;
 }
+@media (max-width: 560px) {
+  .polaroids {
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-top: 24px !important;
+    padding: 0 24px 24px !important;
+  }
+
+  .polaroid {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+
+  .polaroid.left {
+    transform: rotate(-4deg) !important;
+  }
+
+  .polaroid.right {
+    transform: rotate(4deg) !important;
+  }
+}

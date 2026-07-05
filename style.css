@@ -699,4 +699,60 @@ footer span {
     transform: rotate(7deg) !important;
     z-index: 2 !important;
   }
+  
+}
+@media (max-width: 560px) {
+  .polaroids {
+    position: relative !important;
+    height: 330px !important;
+    display: block !important;
+    margin-top: 20px !important;
+    padding: 0 !important;
+  }
+
+  .polaroid,
+  .polaroid.left,
+  .polaroid.right {
+    position: absolute !important;
+    width: 43% !important;
+    max-width: 190px !important;
+    margin: 0 !important;
+  }
+
+  .polaroid.left {
+    left: 8% !important;
+    top: 20px !important;
+    transform: rotate(-6deg) !important;
+    z-index: 1 !important;
+  }
+
+  .polaroid.right {
+    right: 8% !important;
+    top: 10px !important;
+    transform: rotate(7deg) !important;
+    z-index: 2 !important;
+  }
+
+  .families {
+    grid-template-columns: 1fr 1px 1fr !important;
+    gap: 10px !important;
+    padding: 28px 10px !important;
+  }
+
+  .line {
+    width: 1px !important;
+    height: auto !important;
+  }
+
+  .family-box h3 {
+    font-size: 21px !important;
+  }
+
+  .family-box p {
+    font-size: 15px !important;
+  }
+
+  .family-box span {
+    font-size: 12px !important;
+  }
 }

@@ -756,31 +756,6 @@ footer span {
     font-size: 12px !important;
   }
 }
-.rsvp-count {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin: 22px 0;
-}
-
-.rsvp-count div {
-  border: 1px solid rgba(138,106,69,.35);
-  border-radius: 22px;
-  padding: 16px 8px;
-  background: rgba(255,255,255,.5);
-}
-
-.rsvp-count b {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 38px;
-  color: var(--green);
-}
-
-.rsvp-count span {
-  font-size: 13px;
-  color: var(--brown-dark);
-}
 
 .gift-box {
   margin-top: 18px;

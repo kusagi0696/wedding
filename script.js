@@ -53,30 +53,7 @@ giftToggle.addEventListener("click", () => {
   giftContent.classList.toggle("show");
 });
 
-function updateLocalCount(attendValue) {
-  let total = Number(localStorage.getItem("totalCount") || 0);
-  let yes = Number(localStorage.getItem("yesCount") || 0);
 
-  total += 1;
-  if (attendValue === "Có, mình sẽ đến") {
-    yes += 1;
-  }
-
-  localStorage.setItem("totalCount", total);
-  localStorage.setItem("yesCount", yes);
-
-  document.getElementById("totalCount").textContent = total;
-  document.getElementById("yesCount").textContent = yes;
-}
-
-function loadLocalCount() {
-  document.getElementById("totalCount").textContent =
-    localStorage.getItem("totalCount") || 0;
-  document.getElementById("yesCount").textContent =
-    localStorage.getItem("yesCount") || 0;
-}
-
-loadLocalCount();
 
 document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -102,7 +79,7 @@ document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
       body: JSON.stringify(data),
     });
 
-    updateLocalCount(data.attend);
+    
 
     result.textContent = "Cảm ơn bạn! Lời nhắn đã được gửi thành công.";
     form.reset();

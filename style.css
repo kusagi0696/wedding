@@ -1,10 +1,13 @@
 :root {
   --green: #4f6b4a;
   --green-soft: #dfe9d8;
-  --brown: #8a6a45;
-  --brown-dark: #6f5333;
+
+  /* Sage green theme */
+  --brown: #5d7a63;
+  --brown-dark: #48614c;
+
   --paper: #fffdf6;
-  --ink: #42372d;
+  --ink: #3d4b40;
 }
 
 * { box-sizing: border-box; }
@@ -31,8 +34,8 @@ body {
   background:
     radial-gradient(circle at 20% 10%, rgba(223,233,216,.55), transparent 28%),
     radial-gradient(circle at 95% 75%, rgba(223,233,216,.5), transparent 24%),
-    linear-gradient(90deg, rgba(138,106,69,.035) 1px, transparent 1px),
-    linear-gradient(rgba(138,106,69,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79,107,74,.035) 1px, transparent 1px),
+    linear-gradient(rgba(79,107,74,.03) 1px, transparent 1px),
     var(--paper);
   background-size: auto, auto, 18px 18px, 18px 18px, auto;
 }
@@ -256,8 +259,8 @@ h2 {
   grid-template-columns: 1fr 1px 1fr;
   gap: 20px;
   padding: 34px 24px;
-  border-top: 1px solid rgba(138,106,69,.2);
-  border-bottom: 1px solid rgba(138,106,69,.2);
+  border-top: 1px solid rgba(79,107,74,.2);
+  border-bottom: 1px solid rgba(79,107,74,.2);
   text-align: center;
 }
 
@@ -326,8 +329,8 @@ h2 {
 
 .date-layout b {
   margin-top: 12px;
-  border-top: 1px solid rgba(138,106,69,.55);
-  border-bottom: 1px solid rgba(138,106,69,.55);
+  border-top: 1px solid rgba(79,107,74,.45);
+  border-bottom: 1px solid rgba(79,107,74,.45);
   padding: 8px 0;
 }
 
@@ -431,7 +434,7 @@ h2 {
 }
 
 .memory {
-  background: var(--brown);
+  background: linear-gradient(135deg, #6c8a71, #4f6b4a);
   color: white;
   padding: 42px 28px;
 }
@@ -503,12 +506,12 @@ form {
 
 input, textarea, select {
   width: 100%;
-  border: 1px solid var(--brown);
+  border: 1.5px solid #9db39d;
   border-radius: 999px;
   padding: 14px 18px;
   background: rgba(255,255,255,.45);
   font: inherit;
-  color: var(--brown-dark);
+  color: #48614c;
   outline: none;
 }
 
@@ -777,7 +780,7 @@ footer span {
   display: none;
   margin-top: 18px;
   padding: 20px;
-  border: 1px solid rgba(138,106,69,.35);
+  border: 1px solid rgba(79,107,74,.28);
   border-radius: 24px;
   background: rgba(255,255,255,.55);
 }
@@ -791,4 +794,63 @@ footer span {
   max-width: 80%;
   border-radius: 18px;
   margin-bottom: 12px;
+}
+
+/* =========================
+   Sage Green Theme Override
+   ========================= */
+.memory {
+  background: linear-gradient(135deg, #6c8a71, #4f6b4a) !important;
+}
+
+.line {
+  background: #5d7a63 !important;
+}
+
+.polaroid figcaption,
+.family-box p,
+.family-box span,
+.date-card,
+.rsvp p,
+.count-row span {
+  color: #48614c !important;
+}
+
+input,
+textarea,
+select {
+  border: 1.5px solid #9db39d !important;
+  color: #48614c !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4f6b4a !important;
+  box-shadow: 0 0 10px rgba(79,107,74,.18) !important;
+}
+
+::placeholder {
+  color: #8fa18f !important;
+}
+
+button[type="submit"],
+.map-btn,
+#giftToggle {
+  background: #4f6b4a !important;
+}
+
+button[type="submit"]:hover,
+.map-btn:hover,
+#giftToggle:hover {
+  background: #3e573e !important;
+}
+
+.gift-content {
+  border-color: rgba(79,107,74,.28) !important;
+}
+
+.photo-banner span {
+  color: #fff !important;
+  text-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
 }

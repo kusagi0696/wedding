@@ -854,3 +854,25 @@ button[type="submit"]:hover,
   color: #fff !important;
   text-shadow: 0 5px 15px rgba(0,0,0,.25) !important;
 }
+
+/* Timeline: 2 events layout */
+.timeline-row {
+  grid-template-columns: repeat(2, minmax(120px, 180px)) !important;
+  justify-content: center !important;
+  gap: 70px !important;
+}
+
+@media (max-width: 560px) {
+  .timeline-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 26px !important;
+  }
+
+  .timeline-item b {
+    font-size: 20px !important;
+  }
+
+  .timeline-item p {
+    font-size: 14px !important;
+  }
+}

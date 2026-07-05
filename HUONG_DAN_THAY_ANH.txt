@@ -1,0 +1,13 @@
+# Cách thay ảnh
+
+Cho ảnh vào thư mục `images` và đặt tên đúng như sau:
+
+- `hero.jpg`: ảnh nền đầu trang, có chữ THẢO & KHOA đè lên
+- `bride.jpg`: ảnh cô dâu dạng polaroid
+- `groom.jpg`: ảnh chú rể dạng polaroid
+- `timeline.jpg`: ảnh lớn ở phần Timeline
+- `album1.jpg`, `album2.jpg`, `album3.jpg`, `album4.jpg`: album ảnh
+
+Sau đó mở `index.html` để xem.
+
+Nếu muốn đổi tên ảnh, mở `index.html` và sửa đường dẫn trong `src="images/..."`.

@@ -1,4 +1,4 @@
-const weddingDate = new Date("2026-08-02T18:00:00+07:00");
+const weddingDate = new Date("2026-12-27T18:00:00+07:00");
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzFHZY2boc-Hx8Ua8BCUzMKOmbhV2lqQn_wR4iw7I9zXXZ9woUy8_pndibT7gDvsUDs/exec";
 
@@ -64,7 +64,7 @@ document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
   const data = Object.fromEntries(new FormData(form).entries());
 
   data.createdAt = new Date().toLocaleString("vi-VN");
-  data.page = "Thảo & Khoa Wedding";
+  data.page = "Khoa & Thảo Wedding";
 
   result.textContent = "Đang gửi lời nhắn...";
   result.style.color = "#4f6b4a";
